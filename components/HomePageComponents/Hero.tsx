@@ -33,6 +33,9 @@ const Container = styled.div`
   @media screen and (max-width: 768px) {
     flex-direction: column;
     width: 90%;
+    h1 {
+      font-size: 1.5rem;
+    }
   }
 `;
 const Image = styled.img`

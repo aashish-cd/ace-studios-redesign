@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
 const Content = ({ heading, text, image, imageText, reverse }: any) => {
-  const [width, setWidth] = useState(window.innerWidth);
+  const [width, setWidth] = useState(window.innerWidth || 900);
   useEffect(() => {
     window.addEventListener('resize', () => setWidth(window.innerWidth));
   }, []);
