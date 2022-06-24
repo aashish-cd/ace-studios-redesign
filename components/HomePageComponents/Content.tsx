@@ -14,13 +14,27 @@ const Content = ({ heading, text, image, imageText, reverse }: any) => {
         flexDirection: width < 768 ? 'column' : reverse ? 'row-reverse' : 'row',
       }}
     >
-      <ImageContainer>
-        <img src={image} alt={imageText} />
-      </ImageContainer>
-      <TextContainer>
-        <h2>{heading}</h2>
-        <p>{text}</p>
-      </TextContainer>
+      {width < 768 ? (
+        <>
+          <h2>{heading}</h2>
+          <ImageContainer>
+            <img src={image} alt={imageText} />
+          </ImageContainer>
+          <TextContainer>
+            <p>{text}</p>
+          </TextContainer>
+        </>
+      ) : (
+        <>
+          <ImageContainer>
+            <img src={image} alt={imageText} />
+          </ImageContainer>
+          <TextContainer>
+            <h2>{heading}</h2>
+            <p>{text}</p>
+          </TextContainer>
+        </>
+      )}
     </Container>
   );
 };
@@ -33,6 +47,7 @@ const Container = styled.div`
   width: 90%;
   @media screen and (max-width: 768px) {
     flex-direction: column;
+    width: 80%;
   }
 `;
 
@@ -42,6 +57,7 @@ const ImageContainer = styled.div`
   align-items: center;
   img {
     width: 80%;
+    border-radius: 10px;
   }
   @media screen and (max-width: 768px) {
     img {
@@ -53,8 +69,8 @@ const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 90%;
+  /* align-items: center; */
+  width: 70%;
   @media screen and (max-width: 768px) {
     width: 90%;
   }
@@ -71,7 +87,7 @@ const TextContainer = styled.div`
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
-
+    padding-left: 1rem;
     letter-spacing: 0.01em;
   }
 `;

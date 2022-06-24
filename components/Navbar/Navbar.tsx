@@ -83,7 +83,7 @@ function Navbar() {
                 </li>
               </ul>
             </NavLinkContainer>
-            <Button className='primaryBackground'>
+            <Button className='secondaryBackground'>
               <Link href='/contact'>CONTACT US</Link>
             </Button>
           </>

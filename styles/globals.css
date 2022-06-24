@@ -19,13 +19,13 @@ a {
   color: #ed2024;
 }
 .primaryBackground {
-  background-color: rgba(239, 168, 169, 0.525);
-  color: #061139;
+  background-color: #364ea1;
+  color: #fff;
 }
 .secondaryBackground {
-  background-color: rgba(131, 154, 239, 0.635);
-  color: #6d0a0c;
+  background-color: #ed2024;
+  color: #fff;
 }
 .sectionMargin {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
 }
