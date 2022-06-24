@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
+import useWidth from '../../customHooks/useWidth';
 
 const Content = ({ heading, text, image, imageText, reverse }: any) => {
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    window.addEventListener('resize', () => setWidth(window.innerWidth));
-  }, []);
+  const width = useWidth();
 
   return (
     <Container
