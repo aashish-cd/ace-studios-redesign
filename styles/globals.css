@@ -12,3 +12,20 @@ a {
 * {
   box-sizing: border-box;
 }
+.primary {
+  color: #364ea1;
+}
+.secondary {
+  color: #ed2024;
+}
+.primaryBackground {
+  background-color: rgba(239, 168, 169, 0.525);
+  color: #061139;
+}
+.secondaryBackground {
+  background-color: rgba(131, 154, 239, 0.635);
+  color: #6d0a0c;
+}
+.sectionMargin {
+  margin-top: 2.5rem;
+}
