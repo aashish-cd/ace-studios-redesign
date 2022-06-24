@@ -1,9 +1,26 @@
-import React from 'react';
-import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
+// import Image from 'next/image';
 import styled from 'styled-components';
-import image from '../../public/acestudios.png';
+import { FaTimes } from 'react-icons/fa';
+import { AiOutlineMenu } from 'react-icons/ai';
 
 function Navbar() {
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(false);
+  const toggleNavbar = () => {
+    setShowNavbar(!showNavbar);
+  };
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      let width = window.innerWidth;
+      if (width < 768) {
+        setShowDropdown(true);
+        setShowNavbar(false);
+      } else {
+        setShowDropdown(false);
+      }
+    });
+  }, []);
   return (
     <>
       <NavContainer>
@@ -15,14 +32,33 @@ function Navbar() {
             alt={'ace studios'}
           />
         </ImageContainer>
-        <NavLinkContainer>
-          <ul>
-            <li>Home</li>
-            <li>What we do</li>
-            <li>About us</li>
-          </ul>
-        </NavLinkContainer>
-        <Button>CONTACT US</Button>
+        {showDropdown ? (
+          <DropDown onClick={toggleNavbar}>
+            {showNavbar ? (
+              <>
+                <FaTimes />
+                <ul>
+                  <li>Home</li>
+                  <li>What we do</li>
+                  <li>About us</li>
+                </ul>
+              </>
+            ) : (
+              <AiOutlineMenu />
+            )}
+          </DropDown>
+        ) : (
+          <>
+            <NavLinkContainer>
+              <ul>
+                <li>Home</li>
+                <li>What we do</li>
+                <li>About us</li>
+              </ul>
+            </NavLinkContainer>
+            <Button>CONTACT US</Button>
+          </>
+        )}
       </NavContainer>
     </>
   );
@@ -31,8 +67,12 @@ function Navbar() {
 const NavContainer = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: row-reverse;
+  }
 `;
 const ImageContainer = styled.div`
   display: flex;
@@ -60,5 +100,10 @@ const Button = styled.button`
   border-radius: 4px;
   padding: 0.8rem 2rem;
   margin-left: 5rem;
+  cursor: pointer;
+`;
+const DropDown = styled.span`
+  font-size: 2rem;
+  cursor: pointer;
 `;
 export default Navbar;
