@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { FaTimes } from 'react-icons/fa';
 import { AiOutlineMenu } from 'react-icons/ai';
 import Link from 'next/link';
+import useWidth from '../../customHooks/useWidth';
 
 function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -11,6 +12,7 @@ function Navbar() {
   const toggleNavbar = () => {
     setShowNavbar(!showNavbar);
   };
+
   useEffect(() => {
     window.addEventListener('resize', () => {
       let width = window.innerWidth;
@@ -53,7 +55,7 @@ function Navbar() {
               )}
             </DropDown>
             {showNavbar && (
-              <DropDownContainer className='primaryBackground'>
+              <DropDownContainer className='secondaryBackground'>
                 <ul>
                   <li>
                     <Link href='/'>Home</Link>
