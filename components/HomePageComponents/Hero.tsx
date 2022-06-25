@@ -17,6 +17,7 @@ const Container = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 80%;
   h1 {
     padding: 0 2rem;
@@ -25,9 +26,10 @@ const Container = styled.div`
     font-weight: 500;
     font-size: 33px;
     line-height: 160%;
+    width: 500px;
   }
   img {
-    max-width: 500px;
+    max-width: 450px;
     border-radius: 10px;
   }
   @media screen and (max-width: 768px) {
@@ -35,6 +37,7 @@ const Container = styled.div`
     width: 90%;
     h1 {
       font-size: 1.5rem;
+      width: auto;
     }
   }
 `;

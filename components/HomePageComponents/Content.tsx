@@ -54,7 +54,7 @@ const ImageContainer = styled.div`
   justify-content: center;
   align-items: center;
   img {
-    width: 80%;
+    width: 450px;
     border-radius: 10px;
   }
   @media screen and (max-width: 768px) {
@@ -68,7 +68,8 @@ const TextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  width: 70%;
+  margin: 1rem 2rem;
+  width: 50%;
   @media screen and (max-width: 768px) {
     width: 90%;
   }
@@ -76,14 +77,14 @@ const TextContainer = styled.div`
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 2rem;
     line-height: 160%;
   }
   p {
     font-family: 'Avenir LT Std';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.2rem;
     line-height: 160%;
     padding-left: 1rem;
     letter-spacing: 0.01em;

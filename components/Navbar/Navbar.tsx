@@ -12,10 +12,9 @@ function Navbar() {
   const toggleNavbar = () => {
     setShowNavbar(!showNavbar);
   };
-
+  const width = useWidth();
   useEffect(() => {
     window.addEventListener('resize', () => {
-      let width = window.innerWidth;
       if (width < 768) {
         setShowDropdown(true);
         setShowNavbar(false);
@@ -23,7 +22,7 @@ function Navbar() {
         setShowDropdown(false);
       }
     });
-  }, []);
+  }, [width]);
   return (
     <>
       <NavContainer>

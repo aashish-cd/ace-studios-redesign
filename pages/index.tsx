@@ -3,6 +3,8 @@ import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Content from '../components/HomePageComponents/Content';
 import Hero from '../components/HomePageComponents/Hero';
+import Info from '../components/HomePageComponents/Info';
+import Info2 from '../components/HomePageComponents/Info2';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -10,6 +12,7 @@ const Home: NextPage = () => {
     <>
       <div className={styles.container}>
         <Hero />
+        <Info />
         <Content
           heading='website development'
           text='Grow your brand, improve internal processes, reach emerging markets. Build your web application with our software developers.'
@@ -37,6 +40,10 @@ const Home: NextPage = () => {
           image='https://acestudios.tech/webdev.png'
           imageText='website development'
           reverse={false}
+        />
+        <Info2
+          image='https://acestudios.tech/webdev.png'
+          imageText='ace studios'
         />
       </div>
     </>
