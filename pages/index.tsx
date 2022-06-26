@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useState, useEffect } from 'react';
 import Content from '../components/HomePageComponents/Content';
+import Description from '../components/HomePageComponents/Description';
 import Hero from '../components/HomePageComponents/Hero';
 import Info from '../components/HomePageComponents/Info';
 import Info2 from '../components/HomePageComponents/Info2';
@@ -45,6 +46,7 @@ const Home: NextPage = () => {
           image='https://acestudios.tech/webdev.png'
           imageText='ace studios'
         />
+        <Description />
       </div>
     </>
   );

@@ -96,7 +96,8 @@ function Navbar() {
 
 const NavContainer = styled.div`
   position: sticky;
-  top: 0;
+  top: 0px;
+
   display: flex;
   flex-direction: row;
   width: 100%;
