@@ -1,7 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
 html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -28,4 +34,10 @@ a {
 }
 .sectionMargin {
   margin-top: 3rem;
+}
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

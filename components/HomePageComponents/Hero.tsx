@@ -21,7 +21,6 @@ const Container = styled.div`
   width: 80%;
   h1 {
     padding: 0 2rem;
-    font-family: 'Avenir';
     font-style: normal;
     font-weight: 500;
     font-size: 33px;

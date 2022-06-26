@@ -74,14 +74,12 @@ const TextContainer = styled.div`
     width: 90%;
   }
   h2 {
-    font-family: 'Avenir';
     font-style: normal;
     font-weight: 500;
     font-size: 2rem;
     line-height: 160%;
   }
   p {
-    font-family: 'Avenir LT Std';
     font-style: normal;
     font-weight: 400;
     font-size: 1.2rem;
