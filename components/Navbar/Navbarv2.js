@@ -25,10 +25,10 @@ const Navbarv2 = () => {
           <Link href='/'>Home</Link>
         </p>
         <p>
-          <Link href='/service'>What we do</Link>
+          <Link href='#whatwedo'>What we do</Link>
         </p>
         <p>
-          <Link href='/about'>About us</Link>
+          <Link href='#about'>About us</Link>
         </p>
         <button
           className='nav-btn nav-close-btn primary'
