@@ -30,10 +30,7 @@ const Navbarv2 = () => {
         <p>
           <Link href='#about'>About us</Link>
         </p>
-        <button
-          className='nav-btn nav-close-btn primary'
-          onClick={toggleNavbar}
-        >
+        <button className='nav-btn nav-close-btn primary'>
           <FaTimes />
         </button>
       </NavLinkContainer>
