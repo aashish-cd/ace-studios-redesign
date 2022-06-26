@@ -14,39 +14,43 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <Hero />
         <Info />
-        <Content
-          heading='website development'
-          text='Grow your brand, improve internal processes, reach emerging markets. Build your web application with our software developers.'
-          image='https://acestudios.tech/webdev.png'
-          imageText='website development'
-          reverse={true}
-        />
-        <Content
-          heading='website development'
-          text='Grow your brand, improve internal processes, reach emerging markets. Build your web application with our software developers.'
-          image='https://acestudios.tech/webdev.png'
-          imageText='website development'
-          reverse={false}
-        />
-        <Content
-          heading='website development'
-          text='Grow your brand, improve internal processes, reach emerging markets. Build your web application with our software developers.'
-          image='https://acestudios.tech/webdev.png'
-          imageText='website development'
-          reverse={true}
-        />
-        <Content
-          heading='website development'
-          text='Grow your brand, improve internal processes, reach emerging markets. Build your web application with our software developers.'
-          image='https://acestudios.tech/webdev.png'
-          imageText='website development'
-          reverse={false}
-        />
-        <Info2
-          image='https://acestudios.tech/webdev.png'
-          imageText='ace studios'
-        />
-        <Description />
+        <div id='whatwedo' className={styles.container}>
+          <Content
+            heading='website development'
+            text='Grow your brand, improve internal processes, reach emerging markets. Build your web application with our software developers.'
+            image='https://acestudios.tech/webdev.png'
+            imageText='website development'
+            reverse={true}
+          />
+          <Content
+            heading='website development'
+            text='Grow your brand, improve internal processes, reach emerging markets. Build your web application with our software developers.'
+            image='https://acestudios.tech/webdev.png'
+            imageText='website development'
+            reverse={false}
+          />
+          <Content
+            heading='website development'
+            text='Grow your brand, improve internal processes, reach emerging markets. Build your web application with our software developers.'
+            image='https://acestudios.tech/webdev.png'
+            imageText='website development'
+            reverse={true}
+          />
+          <Content
+            heading='website development'
+            text='Grow your brand, improve internal processes, reach emerging markets. Build your web application with our software developers.'
+            image='https://acestudios.tech/webdev.png'
+            imageText='website development'
+            reverse={false}
+          />{' '}
+        </div>
+        <div className={styles.container} id='about'>
+          <Info2
+            image='https://acestudios.tech/webdev.png'
+            imageText='ace studios'
+          />
+          <Description />
+        </div>
       </div>
     </>
   );
