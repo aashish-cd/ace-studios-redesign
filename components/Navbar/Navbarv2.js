@@ -20,7 +20,7 @@ const Navbarv2 = () => {
           />
         </Link>
       </ImageContainer>
-      <NavLinkContainer ref={navRef} onClick={toggleNavbar}>
+      <NavLinkContainer ref={navRef} onClick={toggleNavbar} className='primary'>
         <p>
           <Link href='/'>Home</Link>
         </p>
