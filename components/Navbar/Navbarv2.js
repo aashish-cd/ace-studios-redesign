@@ -20,7 +20,7 @@ const Navbarv2 = () => {
           />
         </Link>
       </ImageContainer>
-      <NavLinkContainer ref={navRef} className='secondaryBackground'>
+      <NavLinkContainer ref={navRef}>
         <p onClick={toggleNavbar}>
           <Link href='/'>Home</Link>
         </p>
@@ -60,14 +60,19 @@ const Container = styled.div`
   .responsive {
     transform: none;
   }
+  button {
+    padding-right: 1rem;
+  }
   @media screen and (max-width: 768px) {
     flex-direction: row;
     align-items: center;
     padding: 1rem 0;
+    width: 100%;
   }
 `;
 const ImageContainer = styled.div`
   display: flex;
+  padding-left: 1rem;
   img {
     width: 120px;
     cursor: pointer;
@@ -78,7 +83,6 @@ const NavLinkContainer = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
-
   p {
     display: inline-block;
     padding: 1rem;
@@ -86,26 +90,30 @@ const NavLinkContainer = styled.div`
     font-size: 1.2rem;
     cursor: pointer;
   }
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     position: fixed;
     height: 100%;
     width: 100%;
     background-color: #ed2024;
+    color: white;
     top: 0;
     left: 0;
-    transition: 1s;
+    transition: 0.6s;
     transform: translateY(-100vh);
     p {
       font-size: 1.5rem;
+    }
+    button {
+      padding-right: 1rem;
     }
   }
 `;
 const Button = styled.button`
   border: none;
   border-radius: 4px;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1rem;
   min-width: fit-content;
   /* margin-left: 5rem; */
   cursor: pointer;

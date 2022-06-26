@@ -24,7 +24,6 @@ const Container = styled.div`
   background-color: #ffb8ba;
   padding: 1rem;
   h2 {
-    font-family: 'Avenir';
     font-style: normal;
     font-weight: 500;
     font-size: 26px;
@@ -34,7 +33,6 @@ const Container = styled.div`
     text-align: center;
   }
   p {
-    font-family: 'Avenir LT Std';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -45,7 +43,6 @@ const Container = styled.div`
     letter-spacing: 0.01em;
   }
   button {
-    font-family: 'Avenir';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;

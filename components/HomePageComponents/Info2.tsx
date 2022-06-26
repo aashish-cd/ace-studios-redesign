@@ -102,7 +102,6 @@ const TextContainer = styled.div`
     width: 90%;
   }
   h2 {
-    font-family: 'Avenir';
     font-style: normal;
     font-weight: 500;
     font-size: 1.6rem;

@@ -10,7 +10,7 @@ const Footer = () => {
         src='https://d33wubrfki0l68.cloudfront.net/1cca4874acc02255ba4cbb6546eef47fb4e6d828/b89db/as.png'
         alt='ace studios'
       />
-      <div>
+      <LinkContainer>
         <p>
           <Link href='/'>Home</Link>
         </p>
@@ -20,7 +20,7 @@ const Footer = () => {
         <p>
           <Link href='about'>About us</Link>
         </p>
-      </div>
+      </LinkContainer>
       <GoTop>
         <a href='#'>
           Go to Top
@@ -46,11 +46,6 @@ const Container = styled.div`
     width: 120px;
     cursor: pointer;
   }
-  div > p {
-    display: inline-block;
-    padding: 1.5rem;
-    font-size: 1.2rem;
-  }
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -61,6 +56,17 @@ const Container = styled.div`
       flex-direction: column;
       padding-right: 20px;
     }
+  }
+`;
+const LinkContainer = styled.div`
+  display: flex;
+  p {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0.3rem 0.5rem;
   }
 `;
 const GoTop = styled.p`
