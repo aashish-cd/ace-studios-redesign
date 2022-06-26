@@ -1,0 +1,21 @@
+.nav-btn {
+  visibility: hidden;
+  opacity: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+.nav-close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+}
