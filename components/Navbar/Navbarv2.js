@@ -9,7 +9,7 @@ const Navbarv2 = () => {
     navRef.current.classList.toggle('responsive');
   };
   return (
-    <Container>
+    <Container className='whiteBackground'>
       <ImageContainer>
         <Link href='/'>
           <img
@@ -51,7 +51,7 @@ const Container = styled.div`
   width: 80%;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
+  background-color: #f6f6f6;
   opacity: 0.9;
   text-align: center;
   .responsive {
@@ -93,8 +93,8 @@ const NavLinkContainer = styled.div`
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: #ed2024;
-    color: white;
+    background-color: #ff5733;
+    color: #f5f0f0;
     top: 0;
     left: 0;
     transition: 0.6s;

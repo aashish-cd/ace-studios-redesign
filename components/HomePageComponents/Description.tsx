@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 const Description = () => {
   return (
-    <Container className='primary sectionMargin'>
+    <Container className='secondaryBackground sectionMargin'>
       <h2>
         With our solutions, you can deliver double impact: <br /> cost-saving
         and more leads.
@@ -11,7 +11,7 @@ const Description = () => {
         We can help you to reduce the content creation and distribution costs
         and generate more leads by optimizing your marketing execution.
       </p>
-      <button className='secondaryBackground'>Contact us for More.</button>
+      <button className='primaryBackground'>Contact us for More.</button>
     </Container>
   );
 };
@@ -21,7 +21,7 @@ const Container = styled.div`
   justify-content: center;
   width: 100%;
   align-items: center;
-  background-color: #ffb8ba;
+
   padding: 1rem;
   h2 {
     font-style: normal;
@@ -48,11 +48,12 @@ const Container = styled.div`
     font-size: 16px;
     line-height: 150%;
     /* identical to box height, or 24px */
-
+    border-radius: 10px;
     text-align: center;
     border: none;
     padding: 0.7rem 1.2rem;
     margin: 1rem auto;
+    cursor: pointer;
   }
   @media screen and (max-width: 768px) {
     p {

@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  background-color: #f6f6f6;
 }
 
 a {
@@ -19,18 +20,19 @@ a {
   box-sizing: border-box;
 }
 .primary {
-  color: #364ea1;
+  color: #6577b3;
 }
 .secondary {
-  color: #ed2024;
+  color: #ff5733;
 }
 .primaryBackground {
   background-color: #364ea1;
-  color: #fff;
+  color: #f6f6f6;
 }
 .secondaryBackground {
-  background-color: #ed2024;
-  color: #fff;
+  background-color: #ff5733;
+  /* background-color: #ed2024; */
+  color: #f6f6f6;
 }
 .sectionMargin {
   margin-top: 3rem;
@@ -40,4 +42,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.whiteBackground {
+  background-color: #e2e2e2;
 }

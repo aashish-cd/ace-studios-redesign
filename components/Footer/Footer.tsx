@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const Footer = () => {
   return (
-    <Container className='sectionMargin secondary'>
+    <Container className='sectionMargin secondary whiteBackground'>
       <img
         src='https://d33wubrfki0l68.cloudfront.net/1cca4874acc02255ba4cbb6546eef47fb4e6d828/b89db/as.png'
         alt='ace studios'
@@ -38,7 +38,7 @@ const Container = styled.div`
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #eaeaea;
+
   text-align: center;
 
   img {

@@ -49,8 +49,8 @@ const Home: NextPage = () => {
             image='https://acestudios.tech/webdev.png'
             imageText='ace studios'
           />
-          <Description />
         </div>
+        <Description />
       </div>
     </>
   );

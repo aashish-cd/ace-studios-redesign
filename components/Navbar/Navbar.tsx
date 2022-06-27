@@ -25,7 +25,7 @@ function Navbar() {
   }, [width]);
   return (
     <>
-      <NavContainer>
+      <NavContainer className='whiteBackground'>
         <ImageContainer>
           <Link href='/'>
             <img
@@ -102,7 +102,7 @@ const NavContainer = styled.div`
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  background-color: white;
+
   opacity: 0.9;
   @media screen and (max-width: 768px) {
     flex-direction: row-reverse;
