@@ -13,14 +13,16 @@ const Info2 = ({ image, imageText }: any) => {
 
   return (
     <Container
-      className='sectionMargin primary'
+      className='sectionMargin'
       style={{
         flexDirection: width < 768 ? 'column' : 'row',
       }}
     >
       {width < 768 ? (
         <>
-          <h2>Deliver more without increasing the headcount of your team</h2>
+          <h2 className='secondary'>
+            Deliver more without increasing the headcount of your team
+          </h2>
           <ImageContainer>
             <img src={image} alt={imageText} />
           </ImageContainer>
@@ -32,7 +34,7 @@ const Info2 = ({ image, imageText }: any) => {
                   marginLeft: width < 768 ? 0 : `${index * 3}rem`,
                   marginRight: '5px',
                 }}
-                className='secondary'
+                className='primary'
               />
               <p className='primary'>{item}</p>
             </ItemContainer>
@@ -44,7 +46,9 @@ const Info2 = ({ image, imageText }: any) => {
             <img src={image} alt={imageText} />
           </ImageContainer>
           <TextContainer>
-            <h2>Deliver more without increasing the headcount of your team</h2>
+            <h2 className='secondary'>
+              Deliver more without increasing the headcount of your team
+            </h2>
             {data.map((item, index) => (
               <ItemContainer key={index}>
                 <GiCheckMark
@@ -53,7 +57,7 @@ const Info2 = ({ image, imageText }: any) => {
                     marginLeft: width < 768 ? 0 : `${index * 3}rem`,
                     marginRight: '5px',
                   }}
-                  className='secondary'
+                  className='primary'
                 />
                 <p className='primary'>{item}</p>
               </ItemContainer>

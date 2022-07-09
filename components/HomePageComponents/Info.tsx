@@ -20,7 +20,7 @@ const Info = () => {
               marginLeft: width < 768 ? 0 : `${index * 3}rem`,
               marginRight: '5px',
             }}
-            className='secondary'
+            className='primary'
           />
           <p className='primary'>{item}</p>
         </ItemContainer>
