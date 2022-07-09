@@ -14,7 +14,7 @@ const Content = ({ heading, text, image, imageText, reverse }: any) => {
     >
       {width < 768 ? (
         <>
-          <h2>{heading}</h2>
+          <h2 className='secondary'>{heading}</h2>
           <ImageContainer>
             <img src={image} alt={imageText} />
           </ImageContainer>
@@ -28,7 +28,7 @@ const Content = ({ heading, text, image, imageText, reverse }: any) => {
             <img src={image} alt={imageText} />
           </ImageContainer>
           <TextContainer>
-            <h2>{heading}</h2>
+            <h2 className='secondary'>{heading}</h2>
             <p>{text}</p>
           </TextContainer>
         </>
@@ -78,6 +78,7 @@ const TextContainer = styled.div`
     font-weight: 500;
     font-size: 2rem;
     line-height: 160%;
+    text-transform: capitalize;
   }
   p {
     font-style: normal;
